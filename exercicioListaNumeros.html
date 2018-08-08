@@ -1,0 +1,57 @@
+<doctype <!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Exercicio pedindo informações.</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body>
+    <script>
+    var num;
+    var quant = 0;
+    var soma = 0;
+    var media = 0;
+    var quantImpar = 0;
+    var quantPrimos = 0;
+    var quantFibo = 0;
+    var cont = 0;
+    
+    
+        num = prompt("Digite um numero positivo ou zero para finalizar: ");
+
+            while (num < 0){
+                num = prompt("Numero invalido, digite outro numero: ");
+            }num > 0;
+            while(num > 0){
+                quant++;
+                num = parseInt(num);
+                soma += num;
+                    if (num%2 == 1){
+                        quantImpar++;
+                    }
+                    for ( i=2; i<num; i++ ){
+                        if ( num%i == 0 ){
+                            cont++;
+                        }if(cont ==2){
+                            quantPrimos++;
+                        }
+                    }
+                    num = prompt("Digite o proximo numero: ")
+
+                    // if (num = 0){
+                    //     alert("Voce final")
+                    // }
+            }(num = 0);
+
+            media  = soma/quant;
+            alert("Foram digitados :"+quant+ " numeros");
+            alert("A soma dos numeros foi: "+soma+" e sua media: "+media);
+            alert("A quantidade de numeros impares digitados foram: "+quantImpar+" numeros");
+            alert("A quantidade de numeros primos digitados foram: "+quantPrimos+" numeros");
+    
+    
+    </script>
+
+</body>
+</html>

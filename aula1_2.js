@@ -30,7 +30,7 @@ idadePessoa = prompt("Informe uma idade, ou zero para finalizar:");
             if (idadePessoa < 18){
                 quantn++;
             }
-            idadePessoa = prompt("Digite a proxima idade");
+            idadePessoa = prompt("Digite a proxima idade, ou zero para finalizar.");
             }idadePessoa = 0;
         
             media = soma / quant;

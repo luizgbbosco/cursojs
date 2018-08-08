@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+ <head>
+  <meta charset='utf-8'/>
+  <title></title>
+
+ </head>
+ <body>
+ <p>
+ <input type="text" id='name'/>
+ </p>
+<input type="button" name="botão" id="verificarvalor" value="Verificar" onclick = 'primo(num)'/>
+<p id="mensagem"></p>
+ </div>
+
+ <script>
+    var num;
+    var resp = '';
+     function primo(num) {
+      for (var i = 2; i < num; i++)
+      if (num % i === 0) return false;
+      return num !== 1;
+      resp = "O número" + primo(num) + "é primo";
+      document.getElementById("name").innerHTML = resp;
+      console.log(resp);
+  }
+    </script>
+ </body>
+</html>
